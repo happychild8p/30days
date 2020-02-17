@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+loop = int(input())
+
+for i in range(0, loop):
+    S = input()
+    N = len(S)
+    print(S[::2]+" "+S[1::2])

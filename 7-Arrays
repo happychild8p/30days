@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+index = int(input())
+elements = input()
+
+A = elements.split(' '); A.reverse()
+print(' '.join(A))

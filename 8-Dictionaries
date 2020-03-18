@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+
+length = int(input()); phonebook = {}
+for i in range(length):
+    key, value = input().split(' ')
+    phonebook[key] = value
+
+for i in range(length):
+    name = input()
+    if name in phonebook.keys():
+        print(name,"=",phonebook[name])
+    else:
+        print("Not found")

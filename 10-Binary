@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+binary = bin(int(input()))[2:]
+counter = 0
+result = 0
+for i in binary:
+    if int(i) == 1:
+        counter = counter + 1
+        if result <= counter:
+            result = counter
+    else:
+        counter = 0
+
+print(result)
+
